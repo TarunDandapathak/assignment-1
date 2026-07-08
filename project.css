@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:280px;
+    background:#fff;
+    border:2px solid #333;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    position:relative;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 20px rgba(0,0,0,.5);
+}
+
+.card h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.red{
+    color:#ff5a4d;
+}
+
+.dollar{
+    font-size:60px;
+}
+
+.month{
+    font-size:22px;
+    color:#555;
+}
+
+.card p{
+    color:#555;
+    font-size:16px;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+hr{
+    margin:20px 0;
+}
+
+ul{
+    list-style:none;
+    text-align:left;
+    margin-bottom:25px;
+}
+
+ul li{
+    margin:15px 0;
+    font-size:18px;
+    position:relative;
+    padding-left:30px;
+}
+
+/* Check Icon */
+ul li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    top:0;
+    width:18px;
+    height:18px;
+    border:2px solid #555;
+    border-radius:50%;
+    font-size:11px;
+    text-align:center;
+    line-height:16px;
+    color:#555;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    font-size:20px;
+    border:2px solid #333;
+    background:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#333;
+    color:#fff;
+}
+
+.btn-red{
+    background:#ff5a4d;
+    color:#fff;
+    border:none;
+}
+
+.btn-red:hover{
+    background:#e6493b;
+}
+
+.badge{
+    position:absolute;
+    top:-20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#ff5a4d;
+    color:#fff;
+    padding:10px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+.popular{
+    transform:scale(1.05);
+}
+
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .popular{
+        transform:scale(1);
+    }
+}
