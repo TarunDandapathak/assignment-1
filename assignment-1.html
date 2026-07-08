@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Course Enrollment Form</h2>
+            <p>Please fill out the form below to secure your spot in the upcoming cohort.</p>
+        </div>
+
+        <form action="#" method="POST">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non-binary</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Preferences</legend>
+                
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+                    <select id="course" name="course" required>
+                        <option value="" disabled selected>Choose a course</option>
+                        <option value="web-dev">Full-Stack Web Development</option>
+                        <option value="data-science">Data Science & Analytics</option>
+                        <option value="ui-ux">UI/UX Design Masterclass</option>
+                        <option value="cybersecurity">Cybersecurity Fundamentals</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Shift</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="shift" value="morning" checked> Morning (9:00 AM - 12:00 PM)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="shift" value="afternoon"> Afternoon (2:00 PM - 5:00 PM)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="shift" value="evening"> Evening (6:00 PM - 9:00 PM)
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Details</legend>
+                
+                <div class="form-group">
+                    <label for="comments">Background / Motivation (Optional)</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Briefly tell us about your experience or why you want to take this course..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="terms" required> I agree to the terms and conditions and privacy policy.
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
